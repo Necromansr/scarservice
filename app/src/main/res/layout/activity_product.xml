@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent"
+        tools:context="scar.example.scarservice.Product">
+    <include layout="@layout/product_action" android:id="@+id/include4"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="#fff" android:layout_marginTop="?attr/actionBarSize" android:layout_width="match_parent"
+                                                       android:layout_height="match_parent"
+                                                        app:layout_constraintBottom_toTopOf="@+id/include4">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="0dp"
+                                                           android:paddingBottom="3dp"
+                                                           android:background="@drawable/borderbottom"
+                                                           app:layout_constraintHeight_percent="0.15"
+                                                           app:layout_constraintTop_toTopOf="parent"
+                                                           android:id="@+id/constraintLayout2">
+            <TextView android:fontFamily="@font/helvetica_bold" android:textSize="20sp" android:paddingLeft="40dp"
+                      android:paddingStart="40dp" app:layout_constraintWidth_percent="0.55" android:layout_width="0dp"
+                      android:text="MAHLE"
+                      android:layout_height="match_parent"
+                      android:id="@+id/Sku"
+                      android:gravity="center_vertical"
+                      app:layout_constraintStart_toEndOf="@+id/Maker"
+                      app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+            <TextView android:fontFamily="@font/helvetica_bold" android:textSize="20sp" android:paddingLeft="40dp"
+                      android:paddingStart="40dp" app:layout_constraintWidth_percent="0.43" android:layout_width="0dp"
+                      android:text="MAHLE"
+                      android:layout_height="match_parent"
+                      android:gravity="center_vertical"
+                      android:background="@drawable/borderright"
+                      app:layout_constraintStart_toStartOf="parent" android:id="@+id/Maker"
+                      app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="0dp"
+                                                           android:background="@drawable/borderbottom"
+                                                           app:layout_constraintHeight_percent="0.15"
+                                                           app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                                                           android:id="@+id/constraintLayout3">
+
+            <TextView android:fontFamily="@font/helvetica_medium" android:textSize="20sp" android:paddingLeft="40dp"
+                      android:paddingStart="40dp" android:layout_width="match_parent"
+                      android:text="MAHLE"
+                      android:id="@+id/Name"
+                      android:layout_height="match_parent"
+                      android:gravity="center_vertical"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp"
+                                                           android:layout_height="0dp"
+                                                           app:layout_constraintWidth_percent="0.83"
+                                                           app:layout_constraintHeight_percent="0.55"
+                                                           app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+                                                           app:layout_constraintEnd_toEndOf="parent"
+                                                           app:layout_constraintStart_toStartOf="parent"
+                                                           android:layout_marginStart="8dp"
+                                                           android:layout_marginBottom="8dp"
+                                                           app:layout_constraintBottom_toBottomOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp"
+                                                               android:layout_height="match_parent"
+                                                               app:layout_constraintEnd_toEndOf="parent"
+                                                               app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                                   android:layout_height="0dp"
+                                                                   android:layout_marginEnd="0dp"
+                                                                   app:layout_constraintHeight_percent="0.4"
+                                                                   app:layout_constraintTop_toTopOf="parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout app:layout_constraintWidth_percent="0.315"
+                                                                       android:layout_width="0dp"
+                                                                       android:layout_height="match_parent"
+                                                                       app:layout_constraintStart_toStartOf="parent"
+                                                                       android:id="@+id/constraintLayout5">
+                        <TextView android:textColor="#fff" android:background="@drawable/borderbottom_white" android:text="Остаток на складе"
+                                  android:fontFamily="@font/helvetica_medium" android:textSize="16sp"
+                                  android:gravity="center_vertical|center_horizontal"
+                                  android:layout_width="match_parent" app:layout_constraintHeight_percent="0.4"
+                                  android:layout_height="0dp"
+                                  app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView5"/>
+                        <TextView android:textColor="#fff" android:background="#417505" android:id="@+id/InStock" android:text="Место"
+                                  android:fontFamily="@font/helvetica_medium" android:textSize="25sp"
+                                  android:gravity="center_vertical|center_horizontal"
+                                  android:layout_width="match_parent" app:layout_constraintHeight_percent="0.6"
+                                  android:layout_height="0dp"
+                                  app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                            android:background="@drawable/edit_text_backgroud"
+                            app:layout_constraintWidth_percent="0.315"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/constraintLayout7"
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+                            app:layout_constraintEnd_toStartOf="@+id/constraintLayout6" android:layout_marginEnd="8dp">
+
+                        <TextView android:background="@drawable/borderbottom" android:layout_width="match_parent"
+                                  app:layout_constraintHeight_percent="0.4" android:layout_height="0dp"
+                                  android:text="Место" android:fontFamily="@font/helvetica_medium"
+                                  android:textSize="16sp" android:gravity="center_vertical|center_horizontal"
+                                  app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView4"/>
+                        <TextView android:text="Место" android:id="@+id/Place"
+                                  android:fontFamily="@font/helvetica_medium" android:textSize="25sp"
+                                  android:gravity="center_vertical|center_horizontal"
+                                  android:layout_width="match_parent" app:layout_constraintHeight_percent="0.6"
+                                  android:layout_height="0dp"
+                                  app:layout_constraintTop_toBottomOf="@+id/textView4" android:background="#00000000"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                            android:background="@drawable/edit_text_backgroud"
+                            app:layout_constraintWidth_percent="0.315"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/constraintLayout6"
+                            app:layout_constraintEnd_toEndOf="parent">
+
+                        <TextView android:background="@drawable/borderbottom" android:layout_width="match_parent"
+                                  app:layout_constraintHeight_percent="0.4" android:layout_height="0dp"
+                                  android:text="Вес" android:fontFamily="@font/helvetica_medium"
+                                  android:textSize="16sp" android:gravity="center_vertical|center_horizontal"
+                                  app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView6"/>
+                        <TextView android:text="Вес" android:id="@+id/Weight"
+                                  android:fontFamily="@font/helvetica_medium" android:textSize="25sp"
+                                  android:gravity="center_vertical|center_horizontal"
+                                  android:layout_width="match_parent" app:layout_constraintHeight_percent="0.6"
+                                  android:layout_height="0dp"
+                                  app:layout_constraintTop_toBottomOf="@+id/textView6" android:background="#00000000"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                                   android:layout_height="0dp"
+                                                                   app:layout_constraintHeight_percent="0.50"
+                                                                   app:layout_constraintBottom_toBottomOf="parent">
+                    <Button android:textSize="16sp" android:lineSpacingMultiplier="1.5"
+                            android:fontFamily="@font/helvetica_regular" app:layout_constraintWidth_percent="0.229"
+                            android:layout_width="0dp" android:layout_height="match_parent"
+                            app:layout_constraintStart_toStartOf="parent" android:id="@+id/place"
+                            android:text="Указать складское место" android:textAllCaps="true"
+                            android:background="@drawable/edit_product_backgroud"/>
+                    <Button android:textSize="16sp" android:lineSpacingMultiplier="1.5"
+                            android:fontFamily="@font/helvetica_regular" android:layout_marginStart="15dp"
+                            app:layout_constraintWidth_percent="0.229" android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/weight"
+                            app:layout_constraintStart_toEndOf="@+id/place" android:text="Указать вес"
+                            android:background="@drawable/edit_product_backgroud"/>
+                    <Button android:textSize="16sp" android:lineSpacingMultiplier="1.5"
+                            android:fontFamily="@font/helvetica_regular" android:layout_marginStart="15dp"
+                            app:layout_constraintWidth_percent="0.229" android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/prints"
+                            app:layout_constraintStart_toEndOf="@+id/weight" android:text="Печать х этикеток"
+                            android:background="@drawable/edit_product_backgroud"/>
+                    <Button android:layout_width="0dp" android:layout_height="match_parent"
+                            app:layout_constraintWidth_percent="0.229"
+                            android:layout_marginStart="15dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:background="@drawable/edit_product_backgroud"
+                            android:id="@+id/print" android:text="ПЕЧАТЬ ЭТИКЕТКИ"
+                            android:fontFamily="@font/helvetica_regular"
+                            android:textSize="16sp" app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/prints"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+<com.google.android.material.navigation.NavigationView
+android:id="@+id/navbar"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:layout_gravity="end"
+app:itemHorizontalPadding="50dp"
+app:itemTextAppearance="@style/ItemNav"
+android:fitsSystemWindows="true"
+app:itemTextColor="#fff"
+android:background="@color/preloader"
+app:headerLayout="@layout/navigationview_header"
+app:menu="@menu/drawer_menu" />
+        </androidx.drawerlayout.widget.DrawerLayout>

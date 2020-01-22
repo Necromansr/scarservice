@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="?attr/actionBarSize"
+                                   android:background="@color/preloader"
+                                    android:id="@+id/login_toolbar">
+    <RelativeLayout android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Новый поиск"
+                  android:padding="20px"
+                  android:layout_marginLeft="10dp"
+                  android:layout_centerVertical="true"
+                  android:textColor="#fff"
+                  android:textSize="20dp"
+                  android:id="@+id/search_new"
+                  android:textStyle="bold" android:layout_alignParentEnd="true" android:layout_marginEnd="20dp"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="Главная"
+                      android:padding="20px"
+                      android:layout_marginLeft="10dp"
+                      android:layout_centerVertical="true"
+                      android:textColor="#fff"
+                      android:textSize="20dp"
+                      android:id="@+id/back"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="Поиск товара"
+                      android:padding="20px"
+                      android:layout_marginLeft="30dp"
+                      android:layout_centerVertical="true"
+                      android:textColor="#fff"
+                      android:textSize="20dp"
+                      android:textStyle="bold"
+                      android:id="@+id/title"
+            />
+        </LinearLayout>
+
+
+        <View android:layout_width="3dp"
+              android:layout_height="match_parent"
+              android:background="#869DB8"
+              android:layout_alignParentRight="false"
+              android:layout_marginLeft="110dp"
+
+        />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
+</RelativeLayout>

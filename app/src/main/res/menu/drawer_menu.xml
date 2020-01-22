@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/search"  android:title="Поиск товара"></item>
+        <item android:id="@+id/receipt" android:title="Поступление"></item>
+        <item android:id="@+id/extradition" android:title="Выдача товара"></item>
+        <item android:id="@+id/layout" android:title="Раскладка"></item>
+        <item android:id="@+id/store" android:title="Привязка складского места"></item>
+        <item android:id="@+id/inventory" android:title="Инвентаризация"></item>
+        <item android:id="@+id/logout" android:title="Выйти"></item>
+</menu>

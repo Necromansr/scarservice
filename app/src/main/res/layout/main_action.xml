@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="?attr/actionBarSize"
+                                       android:background="@color/preloader"
+                                       android:id="@+id/login_toolbar">
+        <RelativeLayout android:layout_margin="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <ImageButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginRight="25dp"
+                         android:background="#00ffffff"
+                         android:id="@+id/nav" android:src="@mipmap/ic_gamburger" />
+            <LinearLayout android:layout_width="600dp" android:orientation="horizontal" android:layout_height="match_parent">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:id="@+id/position_t"
+                          android:text="Кладовщик"
+                          android:padding="25px"
+                          android:paddingRight="0px"
+                          android:layout_marginLeft="0px"
+                          android:layout_centerVertical="true"
+                          android:gravity="center"
+                          android:textColor="#fff"
+                          android:textSize="14dp"
+                          android:fontFamily="@font/helvetica_bold"/>
+                <TextView  android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:text="Склад:"
+                          android:padding="25px"
+                          android:paddingEnd="0dp"
+                          android:layout_centerVertical="true"
+                          android:textColor="#fff"
+                          android:textSize="14dp"
+                          android:gravity="center"
+                          android:fontFamily="@font/helvetica_regular"
+                          />
+                <TextView  android:id="@+id/place_t"  android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:text="Харьков"
+                          android:padding="25px"
+                          android:paddingStart="8dp"
+                          android:layout_centerVertical="true"
+                          android:textColor="#fff"
+                          android:textSize="14dp"
+                          android:gravity="center"
+                          android:fontFamily="@font/helvetica_bold"
+                          />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:text="ФИО:"
+                          android:padding="25px"
+                          android:layout_centerVertical="true"
+                          android:textColor="#fff"
+                          android:paddingEnd="0dp"
+                          android:textSize="14dp"
+                          android:fontFamily="@font/helvetica_regular"
+                          android:gravity="center"
+
+                />
+                <TextView android:id="@+id/name_t" android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:text="Палвов Виталий"
+                          android:padding="25px"
+                          android:layout_centerVertical="true"
+                          android:textColor="#fff"
+                          android:gravity="center"
+                          android:textSize="14dp"
+                          android:fontFamily="@font/helvetica_bold"
+                />
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>
